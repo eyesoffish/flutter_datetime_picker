@@ -13,6 +13,7 @@ class DatePickerTheme with DiagnosticableTreeMixin {
   final double containerHeight;
   final double titleHeight;
   final double itemHeight;
+  final Widget? selectionWidget;
 
   /// Custom title [Widget]. If specify a title widget, the cancel and confirm widgets will not display.
   final Widget? headerWidget;
@@ -22,6 +23,7 @@ class DatePickerTheme with DiagnosticableTreeMixin {
     this.doneStyle = const TextStyle(color: Colors.blue, fontSize: 16),
     this.itemStyle = const TextStyle(color: Color(0xFF000046), fontSize: 18),
     this.headerWidget,
+    this.selectionWidget,
     this.backgroundColor = Colors.white,
     this.headerColor,
     this.containerHeight = 210.0,
